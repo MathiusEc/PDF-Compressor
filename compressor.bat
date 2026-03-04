@@ -58,7 +58,7 @@ for %%f in ("%INPUT_FOLDER%\*.pdf") do (
     echo   [%time%] %%~nxf  ^(!ORIG_KB! KB^)
     <nul set /p "=  Compressing..."
 
-    :: Compress -- parameters kept identical to the original fast script
+    :: Compress Process 
     gswin64c -sDEVICE=pdfwrite ^
     -dCompatibilityLevel=1.5 ^
     -dPDFSETTINGS=!PDFSETTINGS! ^
